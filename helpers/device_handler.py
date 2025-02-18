@@ -74,3 +74,4 @@ def process_print_job(image, printer_info, temp_file_path, rotate=0, dither=Fals
         if debug:
             print(error_msg)
         return False, error_msg 
+    

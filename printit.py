@@ -18,7 +18,8 @@ from brother_ql.backends.helpers import send
 from brother_ql import labels  # Import the labels module
 import usb.core
 import subprocess
-from job_queue import print_queue  # Import from renamed file
+
+from helpers.job_queue import print_queue  # Import from renamed file
 
 # After the imports, before the functions
 if 'label_type' not in st.session_state:
@@ -172,8 +173,8 @@ def get_printer_label_info():
     except Exception as e:
         print(f"Error getting printer status: {str(e)}")  # Debug print
         return "62", f"Error getting printer status, using default"
-
-
+    
+    
 def get_label_type():
     """
     Determine label type in order of precedence:
