@@ -116,3 +116,7 @@ venv.bak/
 /cats
 
  **/.secrets.toml.swp
+fonts/Commodore Angled v1.2.ttf
+fonts/Commodore Rounded v1.2.ttf
+fonts/Commodore-64-v6.3.TTF
+fonts/Disappeared without a trace.ttf
